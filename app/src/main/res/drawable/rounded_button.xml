@@ -1,0 +1,29 @@
+<!-- edittext_bg_selector.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <corners android:radius="16dp" />
+                    <stroke
+                        android:color="@color/customOrange"
+                        android:width="0.1dp" /> <!-- Set the desired stroke width -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@android:color/transparent" />
+                    <corners android:radius="16dp" />
+                    <stroke
+                        android:color="@android:color/white"
+                        android:width="0.1dp" /> <!-- Set the desired stroke width -->
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

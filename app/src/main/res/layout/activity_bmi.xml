@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#030A0E"
+    tools:context=".BMI">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="920dp"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background2" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/ubuntu"
+        android:text="BMI Calculator"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="348dp"
+        android:layout_height="178dp"
+        android:layout_marginTop="48dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="346dp"
+            android:layout_height="176dp"
+            android:layout_margin="1dp"
+            android:alpha="0.95"
+            android:backgroundTint="#111111"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/popins"
+                android:text="Measurement System :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:layout_width="228dp"
+                android:layout_height="97dp"
+                android:layout_margin="60dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="12dp">
+
+                <RadioButton
+                    android:id="@+id/MetricRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins2"
+                    android:text="     Metric System"
+                    android:textColor="@color/white" />
+
+                <RadioButton
+                    android:id="@+id/ImperialRadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins2"
+                    android:text="    Imperial System"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="346dp"
+            android:layout_height="98dp"
+            android:layout_margin="1dp"
+            android:backgroundTint="#111111"
+            app:cardCornerRadius="20dp"
+            android:alpha="0.95">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/popins"
+                android:text="Height :"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/HeightInput"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="46dp"
+                android:ems="10"
+                android:alpha="0.8"
+                android:fontFamily="@font/poppins2"
+                android:hint="Enter Your Height"
+                android:inputType="number"
+                android:textColorHint="#CBCBCB"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="348dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview2">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="346dp"
+            android:layout_height="98dp"
+            android:layout_margin="1dp"
+            android:alpha="0.95"
+            android:backgroundTint="#111111"
+            app:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Weight :"
+                android:fontFamily="@font/popins"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/WeightInput"
+                android:layout_width="273dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="46dp"
+                android:ems="10"
+                android:alpha="0.8"
+                android:fontFamily="@font/poppins2"
+                android:hint="Enter Your Weight"
+                android:inputType="number"
+                android:textColorHint="#CBCBCB"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/CalculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/popins"
+        android:text="Calculate"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:backgroundTint="#FFAA1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardview3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
